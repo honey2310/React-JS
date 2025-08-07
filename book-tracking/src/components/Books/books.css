@@ -1,0 +1,25 @@
+.input{
+    height: 40px;
+    width: 40%;
+    padding: 5px 5px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.add-btn{
+    color: white;
+    background-color:cornflowerblue ;
+    margin-top: 10px;
+}
+
+.preview{
+    font-size: 20px;
+}
+
+.remove-btn{
+    font-size: 15px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: red;
+}
