@@ -40,6 +40,8 @@ Each user is rendered using the User component via .map().
 Keys are used properly to avoid rendering issues.
 
 ## Screenshot
+<img width="1470" height="793" alt="Screenshot 2025-08-08 at 1 42 11 PM" src="https://github.com/user-attachments/assets/24ca4656-7b43-4ab2-a2e5-f1eb3df1e930" />
+
 
 
 
