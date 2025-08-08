@@ -1,12 +1,47 @@
-# React + Vite
+# 👤 User List App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that displays a list of users using reusable components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Uses functional components (`User`, `App`)
+- Imports user data from a separate file (`UserData`)
+- Dynamically renders user info using `map()`
+- Demonstrates use of `props` in React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+project/
+├── src/
+│ ├── assets/
+│ │ └── main.js # Contains the UserData array
+│ ├── components/
+│ │ └── User.jsx # Reusable User component
+│ ├── App.jsx # Main App component
+│ ├── App.css # Optional styles
+│ └── main.jsx # Entry point (Vite)
+├── index.html
+└── package.json
+
+## 🛠 Tech Stack
+React
+
+Vite (or Create React App)
+
+JavaScript (ES6)
+
+## 📌 Notes
+Each user is rendered using the User component via .map().
+
+Keys are used properly to avoid rendering issues.
+
+## Screenshot
+
+
+
+
+
