@@ -8,6 +8,7 @@ export default function Books() {
 
   const [name, setname] = useState("");
   const [author, setauthor] = useState("");
+  const [index, setIndex] = useState(0);
 
   const Addbtn = () => {
     if (!name.trim() || !author.trim()) return;
@@ -22,6 +23,11 @@ export default function Books() {
     setauthor("");
   };
 
+  function editbook(index) {
+    setIndex(index)
+    setname(BookList[index].name);
+    setauthor(BookList[index].author);
+  };
   return (
     <div>
       <input
@@ -42,6 +48,20 @@ export default function Books() {
         Add book
       </button>
 
+
+    <button className="update-book"
+        onClick={() => {
+          const temp = [...BookList];
+          temp[index].name=name;
+          temp[index].author = author;
+          setBookList(temp);
+          setname("");
+          setauthor("")
+        }}
+      >
+        Update Book
+      </button>
+
       {BookList.map((book, index) => (
         <p className="preview" key={book.id}>
           {book.name} - {book.author}
@@ -53,8 +73,9 @@ export default function Books() {
               setBookList(temp);
             }}
           >
-            X
+            Delete
           </button>
+          <button className="edit-btn" onClick={()=>editbook(index)}>Edit</button>
         </p>
       ))}
     </div>

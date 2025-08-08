@@ -7,10 +7,11 @@
     border-radius: 5px;
 }
 
-.add-btn{
+.add-btn,.update-book{
     color: white;
     background-color:cornflowerblue ;
     margin-top: 10px;
+    margin-right: 10px;
 }
 
 .preview{
@@ -22,4 +23,11 @@
     margin-left: 10px;
     background-color: transparent;
     color: red;
+}
+
+.edit-btn{
+    font-size: 15px;
+    margin-left: 10px;
+    background-color: transparent;
+    color:green;
 }
