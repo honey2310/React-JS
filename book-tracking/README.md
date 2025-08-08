@@ -1,12 +1,61 @@
-# React + Vite
+# 📚 Book Tracking App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to track books you've read or plan to read. You can **add**, **edit**, **update**, and **delete** books using a clean and intuitive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Add new books with name and author
+- ✏️ Edit existing book entries
+- 🔁 Update edited books
+- ❌ Delete books from the list
+- 🔄 Realtime state updates using React hooks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖼️ Screenshot
+
+> _(Optional: Add a screenshot or GIF here to show how it works)_
+
+---
+
+## 🧱 Project Structure
+
+book-tracker/
+├── src/
+│ ├── components/
+│ │ └── Books.jsx # Main component with all book logic
+│ ├── App.jsx # Main app file rendering Books component
+│ ├── App.css # Global styles
+│ └── main.jsx # Entry point (if using Vite)
+├── public/
+│ └── index.html
+├── package.json
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ Technologies Used
+
+- React
+- JavaScript (ES6+)
+- CSS (custom)
+
+---
+ ## 🧠 How It Works
+State Management:
+The app uses useState to manage the book list, input fields, and edit mode.
+
+Add Book:
+Fill in the name and author, click "Add Book".
+
+Edit Book:
+Click "Edit" next to any book, update details, then click "Update Book".
+
+Delete Book:
+Click "Delete" to remove any book from the list.
