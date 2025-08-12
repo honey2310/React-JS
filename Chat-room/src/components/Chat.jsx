@@ -2,69 +2,98 @@ import React, { useState } from "react";
 import "./chat.css";
 
 export default function ChatRoom() {
-  const [messages, setMessages] = useState([]);
   const [text, setText] = useState("");
+  const [messages, setMessages] = useState([
+    { text: "Hey there! 👋", time: "10:02", sender: "other" },
+    { text: "Hi! How are you?", time: "10:03", sender: "me" },
+    { text: "I'm good, thanks! What about you?", time: "10:04", sender: "other" },
+    { text: "Doing great 😄", time: "10:05", sender: "me" }
+  ]);
   const [editIndex, setEditIndex] = useState(null);
 
-  // Add or Update Message
-  const handleSend = () => {
-    if (!text.trim()) return;
+  const sendMessage = () => {
+    if (text.trim() === "") return;
+
+    const newMessage = {
+      text,
+      time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+      sender: "me",
+    };
 
     if (editIndex !== null) {
-      // Update existing message
-      const updated = [...messages];
-      updated[editIndex].text = text;
-      setMessages(updated);
+      const updatedMessages = [...messages];
+      updatedMessages[editIndex].text = text;
+      setMessages(updatedMessages);
       setEditIndex(null);
     } else {
-      // Add new message
-      setMessages([...messages, { text, time: new Date().toLocaleTimeString() }]);
+      setMessages([...messages, newMessage]);
     }
 
     setText("");
   };
 
-  // Delete Message
-  const handleDelete = (index) => {
-    setMessages(messages.filter((_, i) => i !== index));
-  };
-
-  // Edit Message
-  const handleEdit = (index) => {
+  const editMessage = (index) => {
     setText(messages[index].text);
     setEditIndex(index);
   };
 
+  const deleteMessage = (index) => {
+    setMessages(messages.filter((_, i) => i !== index));
+  };
+
   return (
     <div className="chat-container">
-      <h2>💬 Chat Room</h2>
-
-      <div className="chat-box">
-        {messages.length === 0 ? (
-          <p className="no-msg">No messages yet...</p>
-        ) : (
-          messages.map((msg, index) => (
-            <div className="message" key={index}>
-              <span className="msg-text">{msg.text}</span>
-              <span className="msg-time">{msg.time}</span>
-              <div className="msg-actions">
-                <button onClick={() => handleEdit(index)}>✏️</button>
-                <button onClick={() => handleDelete(index)}>🗑️</button>
-              </div>
-            </div>
-          ))
-        )}
+      {/* HEADER */}
+      <div className="chat-header">
+        <img src="https://i.pravatar.cc/45?img=1" alt="User" />
+        <div className="info">
+          <strong>John Doe</strong>
+          <small>Online</small>
+        </div>
       </div>
 
+      {/* MESSAGES */}
+      <div className="chat-messages">
+        {messages.map((msg, i) => (
+          <div
+            className={`message ${msg.sender === "me" ? "sent" : "received"}`}
+            key={i}
+          >
+            <img
+              src={
+                msg.sender === "me"
+                  ? "https://i.pravatar.cc/32?img=2"
+                  : "https://i.pravatar.cc/32?img=3"
+              }
+              alt="avatar"
+            />
+            <div className="bubble">
+              <span>{msg.text}</span>
+              <div className="meta">
+                <span className="time">{msg.time}</span>
+                {msg.sender === "me" && (
+                  <div className="actions">
+                    <button onClick={() => editMessage(i)}>✏️</button>
+                    <button onClick={() => deleteMessage(i)}>🗑️</button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* INPUT */}
       <div className="chat-input">
         <input
           type="text"
-          placeholder="Type your message..."
+          placeholder="Type a message..."
           value={text}
           onChange={(e) => setText(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && sendMessage()}
         />
-        <button onClick={handleSend}>
-          {editIndex !== null ? "Update" : "Send"}
+        <button onClick={sendMessage}>
+          {editIndex !== null ? "✓" : "➤"}
         </button>
       </div>
     </div>
