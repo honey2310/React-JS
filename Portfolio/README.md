@@ -25,14 +25,14 @@ This project showcases my **skills, projects, and experience**, along with ways 
 ### **💻 Projects**
 - A showcase of my featured projects with:
   - **Project name**
-  - **Description**
+  - **Language name**
   - **GitHub link** for source code
 
 ### **📬 Contact**
 - Direct links to reach me:
-  - **Email:** [your-email@example.com](mailto:your-email@example.com)
-  - **LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/yourprofile)
-  - **GitHub:** [GitHub Profile](https://github.com/honey2310)
+  - **Email:** honeydeshmukh235@gmail.com
+  - **LinkedIn:** https://www.linkedin.com/in/honey-deshmukh-580297313/
+  - **GitHub:** https://github.com/honey2310
 
 ---
 
