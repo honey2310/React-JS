@@ -1,12 +1,49 @@
-# React + Vite
+# 🌐 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **personal portfolio website**!  
+This project showcases my **skills, projects, and experience**, along with ways to get in touch with me.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Sections**
 
-## Expanding the ESLint configuration
+### **🏠 Home**
+- A clean and modern landing page introducing myself.
+- Highlights my key skills and goals.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### **ℹ️ About**
+- Brief description about me, my background, and my interests.
+- Includes a short career journey and what motivates me in tech.
+
+### **🛠 Tech Stack**
+- Technologies and tools I work with:
+  - **Frontend:** HTML, CSS, JavaScript, React.js
+  - **Styling:** Tailwind CSS / Bootstrap
+  - **Version Control:** Git & GitHub
+  - **Other Tools:** APIs, JSON, NPM
+
+### **💻 Projects**
+- A showcase of my featured projects with:
+  - **Project name**
+  - **Description**
+  - **GitHub link** for source code
+
+### **📬 Contact**
+- Direct links to reach me:
+  - **Email:** [your-email@example.com](mailto:your-email@example.com)
+  - **LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/yourprofile)
+  - **GitHub:** [GitHub Profile](https://github.com/honey2310)
+
+---
+
+## 🛠 **Tech Used**
+- **Frontend:** React.js, HTML5, CSS3, JavaScript
+- **Styling:** Tailwind CSS / Bootstrap
+- **Deployment:** Vercel / Netlify
+- **Version Control:** Git & GitHub
+
+---
+
+## Live demo
+
+
