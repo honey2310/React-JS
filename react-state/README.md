@@ -42,6 +42,7 @@ Keys are used properly to avoid rendering issues.
 ## Screenshot
 
 
+<img width="1470" height="793" alt="Screenshot 2025-08-08 at 1 42 11 PM" src="https://github.com/user-attachments/assets/776cc2f0-4413-489b-9d90-6940742b05ce" />
 
 
 
