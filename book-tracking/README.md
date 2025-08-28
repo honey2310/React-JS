@@ -16,8 +16,6 @@ A simple React application to track books you've read or plan to read. You can *
 
 ## 🖼️ Demo
 
-https://github.com/user-attachments/assets/a74cf501-9ad7-408f-9855-94eb897f15df
-
 ---
 
 ## 🧱 Project Structure
