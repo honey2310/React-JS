@@ -37,3 +37,8 @@ movie-watchlist/
 └── README.md # Project documentation
 
 ## 🖼 Preview
+
+https://github.com/user-attachments/assets/b134cf66-4bba-4f9f-b998-797b0cc72f4e
+
+
+
