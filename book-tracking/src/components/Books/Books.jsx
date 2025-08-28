@@ -8,7 +8,7 @@ export default function Books() {
 
   const [name, setname] = useState("");
   const [author, setauthor] = useState("");
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(null);
 
   const Addbtn = () => {
     if (!name.trim() || !author.trim()) return;
@@ -23,13 +23,33 @@ export default function Books() {
     setauthor("");
   };
 
-  function editbook(index) {
-    setIndex(index)
-    setname(BookList[index].name);
-    setauthor(BookList[index].author);
+  const editbook = (i) => {
+    setIndex(i);
+    setname(BookList[i].name);
+    setauthor(BookList[i].author);
   };
+
+  const updateBook = () => {
+    if (index === null) return;
+    const temp = [...BookList];
+    temp[index].name = name;
+    temp[index].author = author;
+    setBookList(temp);
+    setname("");
+    setauthor("");
+    setIndex(null);
+  };
+
+  const deleteBook = (i) => {
+    const temp = [...BookList];
+    temp.splice(i, 1);
+    setBookList(temp);
+  };
+
   return (
-    <div>
+    <div className="container">
+      <h1 className="title">📚 My Book List</h1>
+
       <input
         type="text"
         placeholder="Enter book name"
@@ -44,40 +64,33 @@ export default function Books() {
         value={author}
         onChange={(e) => setauthor(e.target.value)}
       />
-      <button className="add-btn" onClick={Addbtn}>
-        Add book
-      </button>
 
+      <div className="button-group">
+        <button className="add-btn" onClick={Addbtn}>
+          Add Book
+        </button>
+        <button className="update-book" onClick={updateBook}>
+          Update Book
+        </button>
+      </div>
 
-    <button className="update-book"
-        onClick={() => {
-          const temp = [...BookList];
-          temp[index].name=name;
-          temp[index].author = author;
-          setBookList(temp);
-          setname("");
-          setauthor("")
-        }}
-      >
-        Update Book
-      </button>
-
-      {BookList.map((book, index) => (
-        <p className="preview" key={book.id}>
-          {book.name} - {book.author}
-          <button
-            className="remove-btn"
-            onClick={() => {
-              const temp = [...BookList];
-              temp.splice(index, 1);
-              setBookList(temp);
-            }}
-          >
-            Delete
-          </button>
-          <button className="edit-btn" onClick={()=>editbook(index)}>Edit</button>
-        </p>
-      ))}
+      <div className="book-list">
+        {BookList.map((book, i) => (
+          <div className="book-item" key={book.id}>
+            <span className="book-info">
+              {book.name} — <i>{book.author}</i>
+            </span>
+            <div className="actions">
+              <button className="edit-btn" onClick={() => editbook(i)}>
+                Edit
+              </button>
+              <button className="remove-btn" onClick={() => deleteBook(i)}>
+                Delete
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
