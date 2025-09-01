@@ -37,4 +37,8 @@ appointment-booking-app/
 ├── package.json
 └── README.md
 
-## 📸 demo
+## 📸 Demo
+
+https://github.com/user-attachments/assets/7f8a1cb6-e141-437e-bf19-1cd18f40ac6e
+
+
