@@ -1,0 +1,84 @@
+.booking-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .form-section,
+  .appointments-section {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .booking-form input,
+  .booking-form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .primary-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .primary-btn:hover {
+    background: #45a049;
+  }
+  
+  .appointment-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .edit-btn {
+    padding: 5px 10px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    padding: 5px 10px;
+    background: #F44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .no-appointments {
+    color: gray;
+    font-style: italic;
+  }
+  
