@@ -1,12 +1,39 @@
-# React + Vite
+# 🚀 React Bootstrap Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page built with **React** and **Bootstrap 5**.  
+This project includes feature sections, styled cards, a sign-up form, and custom purple icons.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
+- ⚡ **Bootstrap 5 Integration** – Fast and responsive design out of the box.
+- 🎨 **Custom Styled Components** – Cards, grids, and hero sections made with Bootstrap utilities.
+- 🟣 **Purple Themed Icons** – All icons styled in a consistent purple brand color.
+- 📱 **Fully Responsive** – Works on desktop, tablet, and mobile.
+- 📝 **Clean Forms** – Includes a styled sign-up/login form with validation states.
+- 🌙 **Easily Customizable** – Update colors, content, and components quickly.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Customization
+
+Update colors in App.css or component-level CSS files.
+
+Replace placeholder images with your own inside Card.js.
+
+Edit icons in Features.js (uses Bootstrap Icons).
+
+Change form fields in Info.js.
+
+---
+
+## 📦 Built With
+
+React⚛️
+
+Bootstrap 5 🎨
+
+Bootstrap Icons 🟣
+
+## 📸 Preview
+
