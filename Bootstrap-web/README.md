@@ -37,3 +37,8 @@ Bootstrap Icons 🟣
 
 ## 📸 Preview
 
+https://github.com/user-attachments/assets/6577da4b-372a-4961-a371-81752c5a4d8b
+
+
+
+
