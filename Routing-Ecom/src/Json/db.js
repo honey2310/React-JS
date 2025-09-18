@@ -1,0 +1,87 @@
+export const PetProducts = [
+  // 🐾 Pet Clothing
+  {
+    id: 1,
+    name: "Grey Hoodie",
+    description: "A cozy grey hoodie for dogs, keeping them warm during winter walks.",
+    price: 18.45,
+    image: "https://themewagon.github.io/waggy/images/item1.jpg",
+  },
+  {
+    id: 2,
+    name: "Blue Striped Hoodie",
+    description: "Trendy striped blue hoodie with denim details for a fashionable look.",
+    price: 23.9,
+    image: "https://themewagon.github.io/waggy/images/item2.jpg",
+  },
+  {
+    id: 3,
+    name: "A yellow Hoodie",
+    description: "Soft and stylish Yellow hoodie for small dogs, perfect for outings.",
+    price: 27.5,
+    image: "https://themewagon.github.io/waggy/images/item8.jpg",
+  },
+  {
+    id: 4,
+    name: "Black Hoodie",
+    description: "Classic black hoodie designed for everyday comfort and durability.",
+    price: 34.6,
+    image: "https://themewagon.github.io/waggy/images/item4.jpg",
+  },// 🍖 Pet Food
+  {
+    id: 5,
+    name: "Royal Canin Puppy Food",
+    description: "Balanced nutrition kibble to support healthy growth and immunity in puppies.",
+    price: 29.99,
+    image: "https://themewagon.github.io/waggy/images/item10.jpg",
+  },
+  {
+    id: 6,
+    name: "A Wooden Stay",
+    description: "A perfect and comfort stay for pets.",
+    price: 42.5,
+    image: "https://themewagon.github.io/waggy/images/item5.jpg",
+  },
+  {
+    id: 7,
+    name: "Drools Chicken & Egg",
+    description: "Nutritious food made with real chicken and eggs for shiny coat and strong muscles.",
+    price: 19.99,
+    image: "https://themewagon.github.io/waggy/images/item11.jpg",
+  },
+  {
+    id: 8,
+    name: "A Red Warm Tshirt",
+    description: "Veterinarian-approved formula with antioxidants for healthy digestion.",
+    price: 39.99,
+    image: "https://themewagon.github.io/waggy/images/item3.jpg",
+  },
+  {
+    id: 9,
+    name: "Pedigree Puppy Wet Food",
+    description: "Tasty chicken chunks in gravy, specially made for growing puppies.",
+    price: 14.99,
+    image: "https://themewagon.github.io/waggy/images/item13.jpg",
+  },
+  {
+    id: 10,
+    name: "JerHigh Dog Treats",
+    description: "Chicken-flavored chewy treats, great for training rewards and snacks.",
+    price: 7.99,
+    image: "https://themewagon.github.io/waggy/images/item6.jpg",
+  },
+  {
+    id: 11,
+    name: "JerHigh Bird Treats",
+    description: "Veg-flavored chewy treats, great for training rewards and snacks.",
+    price: 7.99,
+    image: "https://themewagon.github.io/waggy/images/item14.jpg",
+  },
+  {
+    id: 12,
+    name: "Hill's Science Diet",
+    description: "Veterinarian-approved formula with antioxidants for healthy digestion.",
+    price: 39.99,
+    image: "https://themewagon.github.io/waggy/images/item15.jpg",
+  },
+];
