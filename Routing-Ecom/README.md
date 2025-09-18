@@ -37,3 +37,8 @@ src/
 └── styles/ # CSS files
 
 ## Demo
+
+https://github.com/user-attachments/assets/71d37f80-cfa2-4d1b-a068-5bb0ef91cf84
+
+
+
