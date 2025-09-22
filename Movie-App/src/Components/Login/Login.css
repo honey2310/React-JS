@@ -1,0 +1,100 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fffaf5;
+    font-family: noteworthy, Arial, sans-serif;
+  }
+  
+  .login-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border: 2px solid #d69e5e2c;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .login-box h1 {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .login-box p {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .login-icon {
+    width: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #444;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .input-group input:focus {
+    border-color: #d69e5e;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background:  #ff4d4d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: #1a23c4d5;;
+  }
+  
+  .signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color:#ff4d4d;
+  }
+  
+  .signup-text a {
+    color:#ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
