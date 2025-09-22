@@ -41,5 +41,10 @@ favMovies → Stores the list of favorite movies.
 
 Movies remain saved even after refreshing the page.
 
-## 📹 Video
+## 📹  Video
+
+https://github.com/user-attachments/assets/d12cd8fe-c732-45c5-95f4-3911f22b58d8
+
+
+
 
