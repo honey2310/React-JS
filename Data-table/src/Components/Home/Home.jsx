@@ -94,7 +94,7 @@ const initialOrders = [
   },
 ];
 
-export default function OrdersDashboard() {
+export default function Home() {
   const [orders, setOrders] = useState(initialOrders);
   const [filters, setFilters] = useState({
     search: "",
